@@ -14,6 +14,9 @@
 		9B119B921B3C1E580041DE97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B119B911B3C1E580041DE97 /* Images.xcassets */; };
 		9B119B951B3C1E580041DE97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B119B931B3C1E580041DE97 /* LaunchScreen.xib */; };
 		9B119BA11B3C1E580041DE97 /* iListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B119BA01B3C1E580041DE97 /* iListTests.swift */; };
+		9B119BAB1B3C3D330041DE97 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B119BAA1B3C3D330041DE97 /* TaskManager.swift */; };
+		9BC976811B5640AB00AE8109 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC976801B5640AB00AE8109 /* CheckBox.swift */; };
+		9BC976831B56614300AE8109 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC976821B56614300AE8109 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		9B119B9A1B3C1E580041DE97 /* iListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B119B9F1B3C1E580041DE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B119BA01B3C1E580041DE97 /* iListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iListTests.swift; sourceTree = "<group>"; };
+		9B119BAA1B3C3D330041DE97 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		9BC976801B5640AB00AE8109 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		9BC976821B56614300AE8109 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +85,13 @@
 		9B119B851B3C1E580041DE97 /* iList */ = {
 			isa = PBXGroup;
 			children = (
+				9B119B8E1B3C1E580041DE97 /* Main.storyboard */,
 				9B119B881B3C1E580041DE97 /* AppDelegate.swift */,
 				9B119B8A1B3C1E580041DE97 /* FirstViewController.swift */,
 				9B119B8C1B3C1E580041DE97 /* SecondViewController.swift */,
-				9B119B8E1B3C1E580041DE97 /* Main.storyboard */,
+				9B119BAA1B3C3D330041DE97 /* TaskManager.swift */,
+				9BC976821B56614300AE8109 /* TableViewCell.swift */,
+				9BC976801B5640AB00AE8109 /* CheckBox.swift */,
 				9B119B911B3C1E580041DE97 /* Images.xcassets */,
 				9B119B931B3C1E580041DE97 /* LaunchScreen.xib */,
 				9B119B861B3C1E580041DE97 /* Supporting Files */,
@@ -217,7 +226,10 @@
 			files = (
 				9B119B8D1B3C1E580041DE97 /* SecondViewController.swift in Sources */,
 				9B119B891B3C1E580041DE97 /* AppDelegate.swift in Sources */,
+				9B119BAB1B3C3D330041DE97 /* TaskManager.swift in Sources */,
+				9BC976831B56614300AE8109 /* TableViewCell.swift in Sources */,
 				9B119B8B1B3C1E580041DE97 /* FirstViewController.swift in Sources */,
+				9BC976811B5640AB00AE8109 /* CheckBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +427,7 @@
 				9B119BA61B3C1E580041DE97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B119BA71B3C1E580041DE97 /* Build configuration list for PBXNativeTarget "iListTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +436,7 @@
 				9B119BA91B3C1E580041DE97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
